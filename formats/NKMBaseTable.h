@@ -12,8 +12,8 @@ typedef struct
   int dark;
   int almighty;
   int ailment;
-  int heal;
   int support;
+  int heal;
 } SkAff <optimize=false, read=Read_SkAff>;
 
 string Read_SkAff( SkAff &o )
