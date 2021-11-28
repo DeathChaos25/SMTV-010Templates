@@ -58,7 +58,8 @@ string EncountData0_Read( EncountData0 &o )
 
 typedef struct
 {
-  int flags <format=hex>; // guess
+  u16 flags <format=hex>; // guess
+  BGM_ID BGM;
   BattleUnit demons[ 6 ];
   short _[ 6 ]; // guess
 } EncountData1 <optimize=false, read=EncountData1_Read>;
@@ -68,7 +69,7 @@ string EncountData1_Read( EncountData1 &o )
   local string s;
   local int i;
 
-  SPrintf( s, "<%08x> %03d", o.flags, o.demons[ 0 ] ); 
+  SPrintf( s, "<%04x> <BGM %d> %03d", o.flags, o.BGM, o.demons[ 0 ] ); 
   for ( i = 1; i < 5; i++ ) SPrintf( s, "%s, %03d", s, o.demons[ i ] );
 
   return s;

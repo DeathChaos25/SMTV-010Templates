@@ -1740,3 +1740,33 @@ enum<short> BattleUnit
 	_1201 = 1201,
 	_1202 = 1202
 };
+
+typedef enum <u16>
+{
+  Battle_Daat = 0,
+  Battle_Daat_ = 1,
+  DemonKingCastle1 = 2,
+  RESERVE1 = 3,
+  RESERVE2 = 4,
+  FionnMacCumhaill = 5,
+  Metatron = 6,
+  RESERVE3 = 7,
+  NO_BGM = 8,
+  Shiva = 9,
+  Abscess = 10,
+  Ferocity = 11,
+  Strength = 12,
+  HumansDemonsAnd = 13,
+  RESERVE4 = 14,
+  Tsukuyomi = 15,
+  Abdiel = 16,
+  Nuwa = 17,
+  Lucifer1 = 18,
+  Lucifer2 = 19,
+  Seeker = 20,
+  Seeker_ = 21,
+  Ferocity_ = 22,
+  Bethel = 23,
+  Pazuzu = 24,
+  Quest = 25,
+} BGM_ID;
