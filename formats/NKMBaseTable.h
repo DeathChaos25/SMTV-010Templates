@@ -104,6 +104,19 @@ typedef struct
   int hp;
   int sp;
   Stt stats;
+  u8 Field24;
+  u8 Field25;
+  u8 Field26;
+  u8 Field27;
+  int Field28;
+  u8 Field2C;
+  u8 Field2D;
+  u8 Field2E;
+  u8 PressTurns;
+
+  FSeek( startof( this ) + 72 );
+  int EnemyAIPtr<format=hex>;
+  int unkPtr<format=hex>;
 
   FSeek( startof( this ) + 140 );
   SkillNames skills[ 12 ];

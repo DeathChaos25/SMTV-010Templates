@@ -1769,4 +1769,5 @@ typedef enum <u16>
   Bethel = 23,
   Pazuzu = 24,
   Quest = 25,
+  Mitama_ = 29,
 } BGM_ID;
